@@ -1,0 +1,1351 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.width100 {
+
+    width: 100%;
+}
+
+.m-btm20 {
+
+    margin-bottom: 20px;
+}
+
+.clear-fix {
+    clear: both;
+}
+
+.container {
+
+    position: relative;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Home */
+
+
+.home {
+
+    position: relative;
+    background-image: url(../hero.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+.home-layer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.80);
+    z-index: 1;
+}
+
+.navbar {
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    padding: 20px;
+}
+
+.navbar .nav-logo {
+
+    float: left;
+    width: 50%;
+    text-decoration: none;
+    font-family: "roboto", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 24px;
+    padding-left: 40px;
+}
+
+.navbar .nav-logo a {
+
+    text-decoration: none;
+    color: #FF305B;
+}
+
+.navbar .nav-links {
+
+    float: right;
+    width: 50%;
+    font-family: "roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16px;
+}
+
+.navbar .nav-links ul li {
+
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .nav-links ul li a {
+
+    text-decoration: none;
+    color: white;
+    padding-right: 20px;
+}
+
+.navbar .nav-links ul li a:hover {
+
+    color: #FF305B;
+}
+
+.home .home-text {
+
+    position: relative;
+    text-align: center;
+}
+
+.front-layer {
+
+    position: relative;
+    z-index: 3;
+
+}
+
+.home-text {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    overflow: hidden;
+}
+
+.home-text-first {
+
+    color: white;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+
+.home-text-second {
+
+    color: #FF305B;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 70px;
+    margin-bottom: 10px;
+}
+
+.home-text-third {
+
+    color: white;
+    vertical-align: middle;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 26;
+    margin-bottom: 0px 0px 10px;
+}
+
+.animated {
+    text-indent: 8px;
+    color: white;
+}
+
+.animated:before {
+    content: "Developer.";
+    animation: topToBottom 5s infinite 1s;
+}
+
+@keyframes topToBottom {
+    20% {
+        content: "Designer.";
+    }
+}
+
+
+/* about */
+
+.about {
+
+    padding-top: 70px;
+
+}
+
+.about .sec-container {
+
+    width: 100%;
+    margin: 50px;
+}
+
+.about .about-img {
+
+    width: 40%;
+    float: left;
+    vertical-align: middle;
+    padding-bottom: 70px;
+    padding-right: 0px;
+    padding-left: 100px;
+
+}
+
+
+.img-border {
+
+    width: 345px;
+    border-radius: 5px;
+    border: #555555 solid 8px;
+
+}
+
+.image-container {
+
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    top: 15px;
+    left: 15px;
+}
+
+ 
+.overlay {
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: height 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.overlay a i {
+
+    position: relative;
+    color: white;
+    padding: 10px;
+
+}
+
+
+.overlay a i:hover {
+
+    transition: color .5s ease;
+    color: #FF305B;
+}
+
+
+.image-container:hover .overlay {
+    height: 100%;
+}
+
+.about .about-main {
+
+    width: 50%;
+    float: right;
+    vertical-align: middle;
+    margin-right: 30px;
+}
+
+.about .about-main .about-info p {
+
+    margin-bottom: 20px;
+    margin-top: 20px;
+    line-height: 1.5625;
+    margin-bottom: 15px;
+    font-family: "roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: #555555;
+}
+
+.about .about-main .about-info img {
+
+    padding-right: 5px;
+}
+
+.black {
+
+    color: #333333;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 34px;
+}
+
+.about .about-main .col-container {
+
+    margin-top: 15px;
+}
+
+.about .about-main .col-container .first-col {
+
+    width: 50%;
+    float: left;
+}
+
+.about .about-main .col-container .second-col {
+
+    width: 50%;
+    float: left;
+}
+
+.border-bot {
+
+    border-bottom: #999999 dotted 1px;
+    margin-bottom: 15px;
+}
+
+.text-bold {
+
+    font-family: "roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    color: #333333;
+}
+
+.text-normal {
+
+    font-family: "roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: #555555;
+}
+
+.buttons {
+
+    padding-bottom: 70px;
+}
+
+.button {
+
+    background-color: #FF305B;
+    color: white;
+    padding: 10px 24px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+}
+
+.button:hover {
+
+    background-color: #EC2403;
+}
+
+.button a {
+
+    text-decoration: none;
+    color: white;
+    font-family: "roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    padding-right: 5px;
+}
+
+.button img {
+
+    width: 15px;
+}
+
+.about .about-main .col-container ul li {
+
+    list-style: none;
+    line-height: 2;
+}
+
+.about .about-main .col-container ul {
+
+    padding-bottom: 15px;
+}
+
+
+/* services */
+
+.img {
+
+    width: 75px;
+    padding: 0;
+}
+
+.services {
+
+    background-color: #F1F1F1;
+    padding: 50px;
+}
+
+.services .services-cont {
+
+    padding-top: 50px;
+}
+
+.services h2 {
+
+    text-align: center;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+    color: #333333;
+    position: relative;
+
+}
+
+.services h2::after {
+
+    content: '';
+    width: 200px;
+    height: 0.4px;
+    background-color: #FF305B;
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.services h2::before {
+
+    content: '';
+    height: 8.5px;
+    width: 80px;
+    position: absolute;
+    border-top: .4px #FF305B solid;
+    border-bottom: .4px #FF305B solid;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: -20px;
+
+}
+
+
+.services .design img {
+
+    padding: 8px 20px 20px 20px;
+    width: 70px;
+}
+
+.services .design {
+
+    float: left;
+    width: 25%;
+    padding: 30px 10px;
+    text-align: center;
+    position: relative;
+    vertical-align: middle;
+    transition: all 0.5s ease;
+    box-sizing: border-box;
+
+}
+
+.services .design h3 {
+
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #333333;
+    padding-top: 0px;
+    padding-bottom: 20px;
+}
+
+.services .design p {
+
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #555555;
+
+}
+
+.services .design img {
+
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+
+.services .design:hover img {
+
+    transform: scale(1.2);
+}
+
+.services .design::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: transform 0.5s ease;
+}
+
+.services .design:hover::after {
+
+    opacity: 1;
+}
+
+.services .design:hover {
+
+    background-color: white;
+}
+
+/* ------------------------------------------ */
+
+.services .development img {
+
+    padding: 20px;
+}
+
+.services .development h3 {
+
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #333333;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+.services .development p {
+
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #555555;
+}
+
+.services .development {
+
+    float: left;
+    width: 25%;
+    padding: 30px 10px;
+    text-align: center;
+    position: relative;
+    vertical-align: middle;
+    transition: all 0.5s ease;
+    box-sizing: border-box;
+
+}
+
+.services .development img {
+
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+    width: 70px;
+}
+
+.services .development:hover img {
+
+    transform: scale(1.2);
+}
+
+.services .development::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: transform 0.5s ease;
+}
+
+.services .development:hover::after {
+
+    opacity: 1;
+}
+
+.services .development:hover {
+
+    background-color: white;
+}
+
+/* ------------------------------------------ */
+
+.services .product img {
+
+    padding: 20px;
+}
+
+.services .product h3 {
+
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #333333;
+    padding-top: 0px;
+    padding-bottom: 20px;
+}
+
+.services .product p {
+
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #555555;
+}
+
+.services .product {
+
+    float: left;
+    width: 25%;
+    padding: 30px 10px;
+    text-align: center;
+    position: relative;
+    vertical-align: middle;
+    transition: all 0.5s ease;
+    box-sizing: border-box;
+
+}
+
+.services .product img {
+
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+    width: 70px;
+}
+
+.services .product:hover img {
+
+    transform: scale(1.2);
+
+}
+
+.services .product::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.services .product:hover::after {
+
+    opacity: 1;
+
+
+}
+
+.services .product:hover {
+
+    background-color: white;
+}
+
+/* -------------------------------------------- */
+
+.services .set img {
+
+    padding: 20px;
+    width: 70px;
+}
+
+.services .set h3 {
+
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #333333;
+    padding-top: 0px;
+    padding-bottom: 20px;
+
+}
+
+.services .set p {
+
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #555555;
+}
+
+
+.services .set {
+
+    float: left;
+    width: 25%;
+    padding: 30px 10px;
+    text-align: center;
+    position: relative;
+    vertical-align: middle;
+    transition: all 0.5s ease;
+    box-sizing: border-box;
+
+
+}
+
+.services .set img {
+
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+    padding-top: 15px;
+}
+
+.services .set:hover img {
+
+    transform: scale(1.2);
+}
+
+.services .set::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: transform 0.5s ease;
+}
+
+.services .set:hover::after {
+
+    opacity: 1;
+}
+
+.services .set:hover {
+
+    background-color: white;
+}
+
+/* PORTFOLIO */
+
+.portfolio {
+
+    padding: 20px;
+    width: 100%;
+}
+
+.portfolio .title h3 {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-top: 40px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+    color: #333333;
+    position: relative;
+}
+
+.portfolio .title h3::after {
+
+    content: '';
+    width: 200px;
+    height: 0.4px;
+    background-color: #FF305B;
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.portfolio .title h3::before {
+
+    content: '';
+    height: 8.5px;
+    width: 80px;
+    position: absolute;
+    border-top: .4px #FF305B solid;
+    border-bottom: .4px #FF305B solid;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: -20px;
+}
+
+
+
+.title {
+
+    text-align: center;
+}
+
+.bar {
+
+    padding: 20px;
+    text-align: center;
+
+}
+
+
+.bar ul li {
+
+    list-style: none;
+    display: inline-block;
+    padding-right: 15px;
+    padding-bottom: 20px;
+}
+
+.bar ul li a {
+
+    text-decoration: none;
+    color: #333333;
+    font-family: "roboto", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    padding-top: 30px;
+
+}
+
+.bar ul li a:hover {
+
+    color: #FF305B;
+}
+
+.portfolio .main-section {
+
+    padding-bottom: 50px;
+
+}
+
+.portfolio .port-item {
+
+    float: left;
+    width: calc(33.33333333333333% - 30px);
+    position: relative;
+    margin: 15px;
+}
+
+.portfolio .port-item .layer {
+
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: 0.3s opacity;
+    width: 100%;
+
+}
+
+.portfolio .port-item:hover .layer {
+
+    opacity: 1;
+    width: 100%;
+    padding: 15px;
+}
+.portfolio .port-item .layer .dev-icon{
+
+    position: absolute;
+    color: #FF305B;
+    right: 20px;
+    bottom: 20px;
+}
+
+.portfolio .port-item img {
+
+    float: left;
+    width: 100%;
+}
+
+
+/* counter */
+
+.counter {
+
+    background-color: #F1F1F1;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.counter .sec {
+
+    float: left;
+    width: 25%;
+    text-align: center;
+    line-height: 2;
+}
+
+.counter .sec img {
+
+    padding-top: 20px;
+
+}
+
+.counter .sec h2 {
+
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 26px;
+    font-weight: 800;
+    color: #333333;
+}
+
+.counter .sec p {
+
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #555555;
+}
+
+
+/* CLIENT  */
+
+.client {
+
+    padding: 70px;
+}
+
+.client .client-feedback h3 {
+
+    text-align: center;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #333333;
+    margin-bottom: 40px;
+    position: relative;
+
+}
+
+.client .client-feedback h3::after {
+
+    content: '';
+    width: 200px;
+    height: 0.4px;
+    background-color: #FF305B;
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.client .client-feedback h3::before {
+
+    content: '';
+    height: 8.5px;
+    width: 80px;
+    position: absolute;
+    border-top: .4px #FF305B solid;
+    border-bottom: .4px #FF305B solid;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: -20px;
+}
+
+.client-container {
+
+    background-color: #F1F1F1;
+    width: 62%;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 6px;
+    position: relative;
+
+}
+
+.client-container .client-img {
+
+    float: left;
+    width: 20%;
+}
+
+.client-container .client-img img {
+
+    border-radius: 50%;
+    width: 110px;
+    position: relative;
+    z-index: 1;
+}
+
+.client-container .client-text {
+
+    float: right;
+    width: 80%;
+    line-height: 2;
+}
+
+.client-container .client-text h3 {
+
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    color: #333333;
+}
+
+.client-container .client-text span {
+
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 15px;
+    color: #777777;
+}
+
+.client-container .client-text p {
+
+    font-family: "roboto", sans-serif;
+    font-size: 16px;
+    color: #555555;
+    font-style: italic;
+    line-height: 1.5;
+}
+
+.client-container .client-text>i {
+
+    color: #777777;
+    width: 5px;
+    padding-right: 15px;
+}
+
+.stars i {
+
+    color: #F1C30D;
+}
+
+.triangle {
+
+    border: 90px solid #FF305B;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-color: #FF305B transparent transparent #FF305B;
+}
+
+/* BLOG */
+
+.blog-container {
+
+    padding: 50px;
+
+}
+
+.our-blog h2 {
+
+    text-align: center;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+    color: #333333;
+    line-height: 1.5;
+    position: relative;
+}
+
+.our-blog h2::after {
+
+    content: '';
+    width: 200px;
+    height: 0.4px;
+    background-color: #FF305B;
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.our-blog h2::before {
+
+    content: '';
+    height: 8.5px;
+    width: 80px;
+    position: absolute;
+    border-top: .4px #FF305B solid;
+    border-bottom: .4px #FF305B solid;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: -20px;
+}
+
+.blog {
+
+    background-color: #F1F1F1;
+    padding: 50px;
+}
+
+.blog .blog-item {
+
+    width: 33.33333333333333%;
+    float: left;
+    padding-right: 20px;
+
+}
+
+.blog .blog-item .blog-imgs img {
+
+    width: 100%;
+}
+
+.blog-item .content {
+    padding: 20px;
+    width: 100%;
+    background-color: white;
+    border-radius: 0 0 7px 7px;
+}
+
+.blog-item .content p {
+
+    font-family: "roboto", sans-serif;
+    font-size: 16px;
+    color: #555555;
+    line-height: 1.5;
+}
+
+.blog-item .content a {
+
+    list-style: none;
+    text-decoration: none;
+}
+
+.blog-item .content a h3 {
+
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #333333;
+    line-height: 2;
+
+}
+
+.blog-item .content a h3:hover {
+
+    color: #FF305B;
+}
+
+.blog-item .content p {
+
+    font-family: "roboto", sans-serif;
+    font-size: 16px;
+    color: #555555;
+    line-height: 1.5;
+}
+
+.blog-item .content a {
+
+    font-family: "roboto", sans-serif;
+    font-size: 16px;
+    color: #555555;
+    line-height: 3;
+    list-style: none;
+    text-decoration: none;
+}
+
+.blog-item .content a:hover {
+
+    color: #FF305B;
+}
+
+.blog-item .content a i {
+
+    padding-left: 5px;
+}
+
+.aspect-ratio {
+
+    aspect-ratio: 16/9;
+}
+
+
+/* CONTACT US */
+
+
+.contact {
+
+    background-color: white;
+    padding: 50px;
+
+}
+
+.box-container {
+
+    padding-top: 50px;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    display: flex;
+}
+
+.contact-title h3 {
+
+    text-align: center;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+    color: #333333;
+    line-height: 1.5;
+    position: relative;
+}
+
+.contact-title h3::after {
+
+    content: '';
+    width: 200px;
+    height: 0.4px;
+    background-color: #FF305B;
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.contact-title h3::before {
+
+    content: '';
+    height: 8.5px;
+    width: 80px;
+    position: absolute;
+    border-top: .4px #FF305B solid;
+    border-bottom: .4px #FF305B solid;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: -20px;
+}
+
+form {
+
+    width: 70%
+}
+
+.input {
+
+    margin-bottom: 30px;
+}
+
+input,
+textarea {
+
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.row .input {
+
+    flex-basis: 48%;
+}
+
+.input-message {
+    display: none;
+}
+
+input:invalid+.input-message {
+    display: block;
+}
+
+
+::placeholder {
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form button {
+
+    background-color: #FF305B;
+    border-radius: 3px;
+    border: none;
+    padding: 15px 25px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+form button:hover {
+
+    background-color: #EC2403;
+}
+
+.vertical {
+
+    resize: vertical;
+}
+
+/* Footer */
+
+.footer {
+
+    background-color: #333333;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .social-icons {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .social-icons a i {
+
+    color: white;
+    padding: 10px;
+}
+
+.footer .social-icons a i:hover {
+
+    color: #FF305B;
+}
+
+.footer-title {
+
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-title span {
+
+    font-family: "roboto", sans-serif;
+    font-size: 16px;
+    color: white;
+
+}
+
+.footer-title a {
+
+    font-family: "roboto", sans-serif;
+    font-size: 16px;
+    color: #FF305B;
+    list-style: none;
+    text-decoration: none;
+    padding: 0 5px;
+}
+
+.footer-title a:hover {
+
+    text-decoration: underline;
+}
+
